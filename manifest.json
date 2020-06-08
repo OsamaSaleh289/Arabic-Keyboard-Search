@@ -1,0 +1,39 @@
+{
+    "manifest_version": 2,
+    "name": "Yamli Extension",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+
+
+
+            ],
+            "js": ["content.js"]
+
+
+        }
+
+
+
+    ],
+
+    "background": {
+    
+        "scripts": ["background.js"]
+    },    
+    
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_title": "Open Yamli Search Bar"
+    
+    },
+
+    "content_security_policy": "script-src 'self' https://api.yamli.com; object-src 'self'"
+
+
+
+
+
+}
